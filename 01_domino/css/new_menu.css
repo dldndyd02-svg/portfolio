@@ -1,0 +1,352 @@
+body {
+  background-image: url(../images/55115bea217fde13906ef51f5a439dba_imgupscaler.png);
+  background-size: 2135px 2135px;
+  background-repeat: no-repeat;
+  background-position: center 140px;
+}
+.wrapper {
+  max-width: 1600px;
+  width: 100%;
+  /* height: 270px; */
+}
+
+/* header */
+header {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  height: 85px;
+  padding-top: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+header .logo img {
+  width: 154px;
+  height: 34px;
+  margin-bottom: 0;
+}
+header .top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 14px;
+}
+header .top .login,
+header .top .sign-up,
+header .top .language {
+  padding: 0 10px;
+}
+header .top .language {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 5px 13px;
+}
+
+/* nav */
+nav {
+  margin: 0 auto;
+  max-width: 1920px;
+  width: 100%;
+  font-size: 18px;
+  border-bottom: 1px solid #ddd;
+}
+nav ul {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0 auto;
+}
+nav ul li {
+  flex: 1;
+  text-align: center;
+}
+nav ul li a {
+  display: block;
+  line-height: 54px;
+  position: relative;
+}
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+  width: 0;
+  height: 2px;
+  background-color: #121212;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+nav ul li a:hover::after {
+  width: 50%;
+}
+
+/* typo */
+.typo {
+  font-family: 'Paperozi';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-1Thin.woff2') format('woff2');
+  font-weight: 900;
+  font-display: swap;
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+  margin: 0 auto;
+}
+.typo p {
+  display: block;
+  font-size: 6vw;
+  font-weight: 900;
+  letter-spacing: -5px;
+}
+.typo p:first-child {
+  position: absolute;
+  color: #0078AE;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.typo p:last-child {
+  position: absolute;
+  color: #E51937;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/* sub-nav */
+.sub-nav {
+  width: 100%;
+  max-width: 1920px;
+  height: 48px;
+  margin: 542px auto 0;
+  /* padding-left: 360px; */
+}
+.sub-nav ul {
+  width: 100%;
+  max-width: 1200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  border-bottom: 2px solid #121212;
+  margin: 0 auto;
+}
+.sub-nav li {
+  margin: 0 auto;
+}
+.sub-nav li a {
+  padding: 0 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.sub-nav li:first-child a {
+  color: #E51937;
+  border-bottom: 2px solid #E51937;
+}
+.sub-nav li a:hover {
+  color: #0078AE;
+}
+
+/* menu */
+.item-wrap {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-flow: wrap;
+  gap: 80px 15px;
+  justify-content: flex-start;
+  margin: 80px auto 0;
+}
+.item {
+  width: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.item:hover .img-area {
+  /* background-color: #0078AE; */
+  background-image: url(../images/Pizza_Box.png);
+  background-position: 0px center;
+}
+.item:hover .img-area img {
+  display: none;
+  background-position: 0px center;
+}
+.item .img-area {
+  width: 390px;
+  height: 390px;
+  background-color: #f3f3f3;
+  border-radius: 16px;
+}
+.item .img-area img {
+  width: 390px;
+  height: 390px;
+}
+.item .txt-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.item .txt-area h3 {
+  font-size: 1.2rem;
+}
+.item .txt-area p {
+  font-size: 1rem;
+}
+.item .size {
+  display: flex;
+  justify-content: center;
+  line-height: 30px;
+}
+.item .size p {
+  background-color: #0078AE;
+  color: #fff;
+  font-weight: 700;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 30px;
+}
+.item .size p:nth-child(4) {
+  background-color: #E51937;
+  color: #fff;
+}
+.item .size span:nth-child(2) {
+  margin-right: 18px;
+}
+
+/* paging */
+.paging {
+  margin: 120px auto 150px;
+}
+.paging ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.paging ul li a img {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+}
+.paging ul li:nth-child(2) {
+  width: 50px;
+  height: 50px;
+} 
+.paging ul li:nth-child(2) a {
+  font-size: 1.3rem;
+  line-height: 40px;
+} 
+
+/* footer */
+footer {
+  position: relative;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 52px;
+  border-top: 1px solid #ddd;
+  margin-bottom: 80px;
+}
+.ft-logo {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.ft-logo img {
+  width: 123px;
+  height: 26px;
+}
+.ft-logo span {
+  font-size: 30px;
+  font-weight: 600;
+  margin-left: 14px;
+}
+.ft-1 {
+  max-width: 1200px;
+  width: 100%;
+  margin: 14px auto 24px;
+}
+.ft-1 ul {
+  width: 1000px;
+}
+.ft-1 ul li {
+  /* float: left; */
+  display: inline-block;
+}
+.ft-1 ul li a {
+  padding: 10px;
+  font-size: 14px;
+}
+.ft-1 ul li:first-child a {
+  padding: 10px 10px 10px 0;
+}
+.ft-info {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 1.75;
+  color: #888;
+}
+.ft-3 p:first-child {
+  margin-top: 12px;
+}
+
+.ft-item {
+  width: 220px;
+  position: absolute;
+  top: 0;
+  right: 18%;
+  bottom: 0;
+}
+.download {
+  position: absolute;
+  top: 37%;
+  right: 0%;
+}
+.SNS {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.SNS ul li,
+.download ul li {
+  float: left;
+}
+.download ul li:nth-child(2) a,
+.download ul li:nth-child(3) a {
+  padding: 0 4px 0 0;
+}
+.download ul li:first-child {
+  font-size: 12px;
+  padding-right: 8px;
+}
+.download ul li:nth-child(2) a img {
+  width: 22px;
+  height: 26px;
+}
+.download ul li a img {
+  width: 28px;
+  height: 23px;
+}
+
+.SNS ul li a {
+  padding: 0 6px;
+}
+.SNS ul li a img {
+  width: 21px;
+  height: 21px;
+}
+.SNS ul li:first-child a img {
+  width: 15px;
+  height: 20px;
+}

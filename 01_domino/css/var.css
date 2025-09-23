@@ -1,0 +1,21 @@
+:root {
+  /* 컬러 */
+  --white: #ffffff;
+  --black: #000;
+  --main-color: #c00000;
+  --arrow-bg: rgba(0,0,0,.55);
+  --shadow: 0 6px 16px rgba(0,0,0,.15);
+
+  /* 폰트 */
+  --font-size16: 16px;
+  --font-size18: 18px;
+  --font-size20: 20px;
+  --font-size24: 24px;
+  --font-size28: 28px;
+  --font-size40: 40px;
+  --font-weight400: 400;
+  --font-weight600: 600;
+
+  --gap: 30px;
+}
+
