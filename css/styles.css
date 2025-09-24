@@ -11075,3 +11075,20 @@ html {
 .line {
   border-bottom: 1px solid #121212;
 }
+
+/* icon box */
+.icon-box {
+  position: fixed;
+  right: 1vw;
+  bottom: 1vw;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.mail img,
+.tel img {
+  border-radius: 100%;
+  background: #fff;
+  width: 50px;
+  height: 50px;
+}
