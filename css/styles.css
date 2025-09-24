@@ -11085,9 +11085,15 @@ html {
   flex-direction: column;
   gap: 14px;
   color: #fff;
-  justify-content: center;
+  font-size: 0.9rem;
+  align-items: end;
 }
 .mail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.tel {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -11098,6 +11104,9 @@ html {
   border-radius: 8px;
   margin-right: 14px;
   opacity: 0;
+}
+.number {
+  font-size: 0.8rem;
 }
 .mail img,
 .tel img {
