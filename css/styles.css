@@ -7390,7 +7390,7 @@ textarea.form-control-lg {
 .bg-primary {
   /* background-color: #1abc9c !important; */
   /* background-color: var(--bs-dark); */
-  background-image: url(../assets/img/portfolio/front_bg.jpg);
+  background: url(../assets/img/portfolio/bg2.jpg) no-repeat center/cover;
 }
 
 .bg-secondary {
@@ -10994,6 +10994,7 @@ html {
 .masthead {
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
+  height: 960px;
 }
 .masthead .masthead-heading {
   font-size: 2.75rem;
@@ -11072,6 +11073,31 @@ html {
   background-color: #1a252f;
 }
 
+/* /////////////////////////////////////////////////////////////// */
+
+/* header */
+
+header {
+  color: #fff;
+}
+header h1 {
+  font-size: 4rem;
+}
+.sub-txt {
+  font-size: 2rem;
+  color: #d7d7d7;
+}
+.myname {
+  font-size: 4rem;
+}
+.myname span {
+  font-size: 2rem;
+  color: #d7d7d7;
+}
+
+
+
+
 .line {
   border-bottom: 1px solid #8F8F8F;
 }
@@ -11124,4 +11150,7 @@ html {
 }
 .tel:hover .number {
   opacity: 1;
+}
+.space {
+  background: url(../assets/img/portfolio/space.png) center/cover;
 }
