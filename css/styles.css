@@ -11095,12 +11095,56 @@ header h1 {
   color: #d7d7d7;
 }
 
-
-
-
-.line {
-  border-bottom: 1px solid #8F8F8F;
+/* portfolio */
+#portfolio {
+  position: relative;
 }
+.star1 img,
+.star2 img,
+.star3 img,
+.star4 img,
+.star5 img,
+.star6 img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+.star1 img {
+  top: 10%;
+  right: 1%;
+  width: 200px;
+  height: 200px;
+}
+.star2 img {
+  left: 25%;
+  top: 5%;
+}
+.star3 img {
+  left: 5%;
+  top: 25%;
+  width: 150px;
+  height: 150px;
+}
+.star4 img {
+  right: 10%;
+  top: 45%;
+  width: 150px;
+  height: 150px;
+}
+.star5 img {
+  left: 30%;
+  top: 90%;
+}
+.star6 img {
+  right: -5%;
+  top: 100%;
+  width: 300px;
+  height: 300px;
+}
+
+
+
+
 
 /* icon box */
 .icon-box {
@@ -11150,7 +11194,4 @@ header h1 {
 }
 .tel:hover .number {
   opacity: 1;
-}
-.space {
-  background: url(../assets/img/portfolio/space-2.png) center/cover;
 }
