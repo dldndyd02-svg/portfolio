@@ -11084,6 +11084,20 @@ html {
   display: flex;
   flex-direction: column;
   gap: 14px;
+  color: #fff;
+  justify-content: center;
+}
+.mail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.box {
+  background: var(--bs-dark);
+  padding: 6px 8px;
+  border-radius: 8px;
+  margin-right: 14px;
+  opacity: 0;
 }
 .mail img,
 .tel img {
@@ -11091,4 +11105,14 @@ html {
   background: #fff;
   width: 50px;
   height: 50px;
+}
+.mail img:hover,
+.tel img:hover {
+  background: #dadada;
+}
+.mail:hover .adress {
+  opacity: 1;
+}
+.tel:hover .number {
+  opacity: 1;
 }
