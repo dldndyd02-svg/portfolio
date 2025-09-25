@@ -11190,3 +11190,9 @@ header h1 {
 .tel:hover .number {
   opacity: 1;
 }
+
+/* About */
+.info-area img {
+  width: 400px;
+  height: 400px;
+}
