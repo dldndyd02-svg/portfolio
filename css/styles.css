@@ -11212,14 +11212,17 @@ header h1 {
   padding-top: 20px;
   padding-bottom: 0px;
 }
+.info-area .car-tit span {
+  color: #aaa;
+}
 .info-area .car-item small {
   color: #aaa;
 }
 .info-area .car-txt {
   margin-top: 30px;
 }
-.info-area .car-txt {
-  
+.info-area .car-txt li {
+  margin-bottom: 10px;
 }
 .info-area .car-item .car-tit {
   display: flex;
