@@ -11097,6 +11097,14 @@ header h1 {
   top: 40%;
   left: 52%;
 }
+.photo {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  background-color: #777778;
+  top: 33%;
+  left: 27%;  
+}
 .sub-txt {
   position: absolute;
   font-size: 2rem;
