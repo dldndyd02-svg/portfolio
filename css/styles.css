@@ -7389,7 +7389,7 @@ textarea.form-control-lg {
 .bg-primary {
   /* background-color: #1abc9c !important; */
   /* background-color: var(--bs-dark); */
-  background: url(../assets/img/portfolio/bgbgbbg.jpg) no-repeat center/cover;
+  background: url(../assets/img/portfolio/bbbbbbg.jpg) no-repeat center/cover;
 }
 
 /* .bg-secondary {
@@ -11119,12 +11119,12 @@ header h1 {
   position: absolute;
   font-size: 2rem;
   font-weight: 900;
-  color: #444;
+  color: #fff;
   top: 52%;
   left: 52%;
 }
 .myname {
-  color: var(--bs-dark);
+  color: #fff;
   position: absolute;
   font-size: 4rem;
   font-weight: 900;
