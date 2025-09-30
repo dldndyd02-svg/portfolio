@@ -11182,12 +11182,9 @@ header h1 {
   font-size: 0.9rem;
   align-items: end;
 }
-.mail {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.tel {
+.mail,
+.tel,
+.kakao {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -11203,20 +11200,27 @@ header h1 {
   font-size: 0.8rem;
 }
 .mail img,
-.tel img {
+.tel img,
+.kakao img {
   border-radius: 100%;
   background: #fff;
   width: 50px;
   height: 50px;
 }
 .mail img:hover,
+.tel img:hover
+.kakao img:hover {
+  background: #dadada;
+}
 .tel img:hover {
   background: #dadada;
 }
-.mail:hover .adress {
-  opacity: 1;
+.kakao img:hover {
+  background: #dadada;
 }
-.tel:hover .number {
+.mail:hover .adress,
+.tel:hover .number,
+.kakao:hover .link {
   opacity: 1;
 }
 
