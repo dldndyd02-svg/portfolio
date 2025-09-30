@@ -10841,7 +10841,7 @@ html {
 
 .page-section, .page-section2 {
   padding: 6rem 0;
-  background-color: #57663F;
+  background-color: var(--bs-dark);
 }
 .page-section2 {
   background-color: var(--bs-white);
