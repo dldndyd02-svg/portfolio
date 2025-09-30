@@ -7,6 +7,8 @@
   --shadow: 0 6px 16px rgba(0,0,0,.15);
 
   /* 폰트 */
+  --font-size12: 12px;
+  --font-size14: 14px;
   --font-size16: 16px;
   --font-size18: 18px;
   --font-size20: 20px;
