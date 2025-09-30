@@ -23,32 +23,44 @@ window.addEventListener('DOMContentLoaded', event => {
 
     };
 
-    // Shrink the navbar 
-    navbarShrink();
+    // // Shrink the navbar 
+    // navbarShrink();
 
-    // Shrink the navbar when page is scrolled
-    document.addEventListener('scroll', navbarShrink);
+    // // Shrink the navbar when page is scrolled
+    // document.addEventListener('scroll', navbarShrink);
 
-    // Activate Bootstrap scrollspy on the main nav element
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            offset: 72,
-        });
-    };
+    // // Activate Bootstrap scrollspy on the main nav element
+    // const mainNav = document.body.querySelector('#mainNav');
+    // if (mainNav) {
+    //     new bootstrap.ScrollSpy(document.body, {
+    //         target: '#mainNav',
+    //         offset: 72,
+    //     });
+    // };
 
-    // Collapse responsive navbar when toggler is visible
-    const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
-            }
-        });
-    });
+    // // Collapse responsive navbar when toggler is visible
+    // const navbarToggler = document.body.querySelector('.navbar-toggler');
+    // const responsiveNavItems = [].slice.call(
+    //     document.querySelectorAll('#navbarResponsive .nav-link')
+    // );
+    // responsiveNavItems.map(function (responsiveNavItem) {
+    //     responsiveNavItem.addEventListener('click', () => {
+    //         if (window.getComputedStyle(navbarToggler).display !== 'none') {
+    //             navbarToggler.click();
+    //         }
+    //     });
+    // });
 
 });
+
+// nav
+    const navbar = document.querySelector('.navbar');
+
+        window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {   // 50px 이상 스크롤 시
+            navbar.classList.add('blur');
+        } else {
+            navbar.classList.remove('blur');
+        }
+        });
+

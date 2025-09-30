@@ -10915,8 +10915,8 @@ html {
 }
 
 #mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  /* padding-top: 1rem;
+  padding-bottom: 1rem; */
   font-family: "Pretendard", "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
 }
@@ -10945,8 +10945,8 @@ html {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    /* padding-top: 1.5rem;
+    padding-bottom: 1.5rem; */
     transition: padding-top 0.3s, padding-bottom 0.3s;
   }
   #mainNav .navbar-brand {
@@ -11096,15 +11096,16 @@ header img {
   width: 100%;
   max-height: 760px;
   height: 100%;
-  top: 50%;
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 header h1 {
   position: absolute;
-  font-size: 4rem;
-  color: var(--bs-dark);
-  top: 40%;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #777;
+  top: 42%;
   left: 52%;
 }
 .photo {
@@ -11112,33 +11113,38 @@ header h1 {
   height: 400px;
   position: absolute;
   background-color: #777778;
-  top: 33%;
+  top: 35%;
   left: 27%;  
 }
 .sub-txt {
   position: absolute;
   font-size: 2rem;
+  font-weight: 900;
   color: #444;
-  top: 50%;
+  top: 52%;
   left: 52%;
 }
 .myname {
   color: var(--bs-dark);
   position: absolute;
   font-size: 4rem;
+  font-weight: 900;
   top: 60%;
   left: 52%;
 }
 .myname span {
   font-size: 2rem;
-  color: #d7d7d7;
+  color: #777;
 }
 
 /* nav */
-.navbar-brand {
-  padding: 6px 14px;
-  border-radius: 14px;
-  background-color: #B4B4B4;
+.navbar {
+  background-color: rgba(119, 119, 119, 0.6);
+  transition: 0.3s ease, backdrop-filter 0.3s ease;
+}
+.navbar.blur {
+  background: rgba(87, 102, 63, 0.3); 
+  backdrop-filter: blur(10px);            
 }
 
 /* portfolio */
@@ -11291,10 +11297,8 @@ header h1 {
 }
 
 
-/* 250925
-포트폴리오 컨셉 선정 이유있어야 함
-도미노 노트북 이미지 그림자 추가
-포트폴리오 섹션 행성 이미지 삭제
-*/
+
+
+
 
 
