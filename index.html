@@ -6,6 +6,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>이우용_포트폴리오</title>
+        <link rel="stylesheet" href="./css/reset.css">
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
@@ -56,16 +57,16 @@
 
                 <!-- 카테고리 -->
                 <ul class="category">
-                    <li><a href="#">All</a></li>
-                    <li><a href="#">Web</a></li>
-                    <li><a href="#">UI/UX</a></li>
-                    <li><a href="#">Branding</a></li>
+                    <button class="cat-btn active" data-cat="all">All</button>
+                    <button class="cat-btn" data-cat="web">Web</button>
+                    <button class="cat-btn" data-cat="uiux">UI/UX</button>
+                    <button class="cat-btn" data-cat="brand">Branding</button>
                 </ul>
 
-                <div class="row justify-content-center">
+                <div class="row justify-content-center items">
 
                 <!-- Item 1-->
-                    <div class="col-md-4 col-lg-4 mb-5 ">
+                    <div class="col-md-4 col-lg-4 mb-5 item uiux">
                         <div class="portfolio-item mx-auto">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                             </div>
@@ -77,7 +78,7 @@
                         </div>
                     </div>
                 <!-- Item 2-->
-                    <div class="col-md-4 col-lg-4 mb-5 ">
+                    <div class="col-md-4 col-lg-4 mb-5 item web">
                         <div class="portfolio-item mx-auto">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                             </div>
@@ -89,7 +90,7 @@
                         </div>
                     </div>
                     <!-- Item 3-->
-                    <div class="col-md-4 col-lg-4 mb-5 ">
+                    <div class="col-md-4 col-lg-4 mb-5 item brand">
                         <div class="portfolio-item mx-auto">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                             </div>

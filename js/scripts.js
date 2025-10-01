@@ -64,3 +64,27 @@ window.addEventListener('DOMContentLoaded', event => {
         }
         });
 
+        
+// categoty
+    const filterBtns = document.querySelectorAll(".cat-btn");
+    const items = document.querySelectorAll(".cat-item");
+
+    filterBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+        // 버튼 active 처리
+        filterBtns.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        const filter = btn.dataset.cat;
+
+        // 아이템 필터링
+        items.forEach(item => {
+        if (filter === "all" || item.classList.contains(filter)) {
+            item.style.display = "block";
+        } else {
+            item.style.display = "none";
+        }
+        });
+    });
+    });
+
