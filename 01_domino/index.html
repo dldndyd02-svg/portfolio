@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>도미노피자</title>
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/var.css">
@@ -43,12 +44,20 @@
   </nav>
 
   <!-- main -->
-  <main>
-    <img src="./images/main.jpg" alt="30분 내 도착보장">
+  <main class="main swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./images/main.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./images/main2.jpg" alt=""></div>
+    </div>
+
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
   </main>
 
   <!-- menu -->
-  <div class="menu-sec wrapper">
+  <!-- <div class="menu-sec wrapper">
     <div class="menu-product">
       <img src="./images/menu-1.jpg" alt="신메뉴 바로가기">
       <p>신메뉴</p>
@@ -59,7 +68,58 @@
       <p>Best 메뉴</p>
       <a href="#">바로가기</a>
     </div>
+  </div> -->
+
+  <div class="menu-sec swiper">
+    <h2>Domino’s Best Menu</h2>
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="./images/new1.png" alt="피자1">
+      <h3>랍스터 슈림프 투움파</h3>
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/new2.png" alt="피자2">
+      <h3>랍스터 슈림프 투움바+블랙타이거 슈림프</h3>
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/new3.png" alt="피자3">
+      <h3>랍스터 슈림프 투움바+와일드 웨스트 스테이크</h3>
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/new4.png" alt="피자4">
+      <h3>랍스터 슈림프 투움바+포테이토</h3>
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/best1.png" alt="피자5">
+      <h3>필라델피아 치즈 스테이크</h3>
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/best2.png" alt="피자6">
+      <h3>블랙타이거 슈림프</h3>
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/best3.png" alt="피자7">
+      <h3>베스트 콰트로</h3>
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/best4.png" alt="피자8">
+      <h3>포테이토</h3>
+    </div>
+    <div class="swiper-slide">
+      <img src="./images/best5.png" alt="피자9">
+      <h3>슈퍼디럭스</h3>
+    </div>
+
   </div>
+  
+  <div class="swiper-button-area">
+    <div class="swiper-button-next"></div>
+  </div>  
+  <div class="swiper-button-area"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>
+
 
   <!-- banner1 -->
   <div class="banner-1">
@@ -184,5 +244,44 @@
     </div>
   </footer>
 
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script>
+    const swiper1 = new Swiper('.main', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      autoplay: {
+        delay: 3000,
+      },
+
+      speed: 1000,
+});
+
+    const swiper2 = new Swiper('.menu-sec', {
+      direction: 'horizontal',
+      loop: true,
+
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      spaceBetween: 20, // 간격
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 </body>
 </html>

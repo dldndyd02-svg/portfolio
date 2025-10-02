@@ -80,9 +80,16 @@ main {
   width: 100%;
   height: 600px;
 }
+.swiper-pagination-bullet {
+  background-color: #fff;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+}
 
 /* menu */
-.menu-sec {
+/* .menu-sec {
   display: flex;
   justify-content: center;
   margin: 100px auto;
@@ -126,6 +133,32 @@ main {
 .menu-product a:hover {
   color: var(--black);
   background-color: var(--white);
+} */
+.menu-sec {
+  margin: 60px auto 100px;
+}
+.menu-sec h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+}
+.menu-sec .swiper-slide {
+  width: 500px;
+  height: 500px;
+  text-align: center;
+}
+.menu-sec .swiper-slide img {
+  width: 100%;
+  height: 400px;
+}
+.menu-sec .swiper-slide h3 {
+  font-size: 1.5rem;
+}
+.menu-sec .swiper-button-next,
+.menu-sec .swiper-button-prev {
+  width: 32px;
+  height: 32px;
+  color: #ddd;
 }
 
 /* banner1 */

@@ -7334,7 +7334,7 @@ textarea.form-control-lg {
 .text-secondary, .text-secondary2 {
   /* color: #2c3e50 !important; */
   color: var(--bs-white);
-  border-bottom: 2px solid #525252;
+  /* border-bottom: 2px solid #525252; */
   padding-bottom: 20px;
 }
 .text-secondary2 {
@@ -10852,7 +10852,7 @@ html {
 .page-section .page-section-heading {
   font-size: 2.25rem;
   line-height: 2rem;
-  border-bottom: 2px solid #525252;
+  /* border-bottom: 2px solid #525252; */
   padding-bottom: 20px;
 }
 @media (min-width: 992px) {
