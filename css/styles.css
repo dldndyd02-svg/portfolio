@@ -11166,9 +11166,9 @@ header h1 {
   color: #777;
   border-radius: 6px;
 }
-.category .cat-btn:hover {
+/* .category .cat-btn:hover {
   background-color: #666;
-}
+} */
 .category .cat-btn.active {
   background-color: #fff;
   color: var(--bs-dark);
@@ -11182,7 +11182,7 @@ header h1 {
 }
 .goto a {
   padding: 6px 40px;
-  border: 1px solid #fff;
+  border: 1px solid #525252;
   border-radius: 8px;
   color: #fff;
   font-size: 1.2rem;
