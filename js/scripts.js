@@ -67,7 +67,7 @@ window.addEventListener('DOMContentLoaded', event => {
         
 // categoty
     const filterBtns = document.querySelectorAll(".cat-btn");
-    const items = document.querySelectorAll(".cat-item");
+    const items = document.querySelectorAll(".item");
 
     filterBtns.forEach(btn => {
     btn.addEventListener("click", () => {
