@@ -562,6 +562,7 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+  margin-top: 30px;
 }
 
 .img-thumbnail {
@@ -7306,6 +7307,7 @@ textarea.form-control-lg {
 
 .text-uppercase {
   text-transform: uppercase !important;
+  margin-bottom: 20px;
 }
 
 .text-capitalize {
@@ -11058,11 +11060,13 @@ html {
 .portfolio-modal .portfolio-modal-title {
   font-size: 2.25rem;
   line-height: 2rem;
+  margin-bottom: 20px;
 }
 @media (min-width: 992px) {
   .portfolio-modal .portfolio-modal-title {
     font-size: 3rem;
     line-height: 2.5rem;
+    margin-bottom: 20px;
   }
 }
 
@@ -11330,6 +11334,7 @@ header h1 {
 }
 .more-text {
   color: var(--bs-dark);
+  margin-bottom: 20px;
 }
 .pf-sub-tit {
   margin-top: 20px;

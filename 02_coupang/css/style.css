@@ -1,0 +1,509 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+body {
+  background-color: #161616;
+  color: #fff;
+  font-family: 'Pretendard', sans-serif;
+}
+.warp {
+  width: 100%;
+  max-width: 1920px;
+}
+
+
+/* header */
+.header {
+  background-color: #fff;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.header h1 {
+  margin-left: 140px;
+  margin-right: 50px;
+}
+nav {
+  color: #363636;
+}
+.header .gnb ul {
+  display: flex;
+  gap: 4px;
+}
+.header ul li a {
+  display: block;
+  width: 76px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: inherit;
+}
+.header .option {
+  margin-right: 140px;
+  margin-left: auto;
+}
+
+
+/* main-content */
+.main {
+  background-color: #363636;
+  width: 100%;
+  max-width:1920px;
+  height: 880px;
+  position: relative;
+}
+.main .map {
+  width: 100%;
+  padding-left: 333px;
+  padding-top: 34px;
+  position: relative;
+}
+.main .sports-event {
+  position: absolute;
+  top: 50px;
+  left: 140px;
+  z-index: 10;
+}
+.marker a .CNBL-MK {
+  position: absolute;
+  left: 65%;
+  top: 25%;
+}
+.marker a .CPBL-MK {
+  position: absolute;
+  left: 71%;
+  top: 51%;
+}
+.marker a .KBO-MK {
+  position: absolute;
+  left: 74.5%;
+  top: 36%;
+}
+.marker a .LMB-MK {
+  position: absolute;
+  left: 26%;
+  top: 44%;
+}
+.marker a .MLB-MK {
+  position: absolute;
+  left: 32%;
+  top: 30%;
+}
+.marker a .NPB-MK {
+  position: absolute;
+  left: 78%;
+  top: 40%;
+}
+
+
+
+/* content */
+.title {
+  font-size: 1.35rem;
+  margin-bottom: 35px;
+  color: #fff;
+  margin-left: 140px;
+  margin-top: 100px;
+}
+.match {
+  color: #fff;
+  margin-left: 140px;
+}
+.item-list {
+  display: flex;
+  gap: 16px;
+}
+.match-card {
+  background-color: #212121;
+  border-radius: 10px;
+  width: 280px;
+  height: 200px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  position: relative;
+}
+.teams {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.team {
+  text-align: center;
+  flex: 1;
+  margin-top: 20px;
+}
+.team-logo {
+  width: 60px;
+  margin: 5px 0;
+}
+.vs {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #ccc;
+}
+.divider-wrapper {
+  position: relative;
+  height: 1px;
+  margin: 0 0 15px;
+}
+.divider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #333;
+}
+.match-info {
+  font-size: 0.9rem;
+  color: #B7B7B7;
+  margin-left: 15px;
+}
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-left: 15px;
+}
+.meta {
+  font-size: 0.9rem;
+  color: #B7B7B7;
+  position: absolute;
+  left: 0;
+  top: 150%;
+  margin-top: 10px;
+  transform: translateY(-0%);
+}
+.notify-button {
+  padding: 8px 16px;
+  background-color: #00AB58;
+  color: #fff;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-0%);
+  margin-right: 15px;
+}
+.notify-button:hover {
+  filter: brightness(1.1);
+}
+
+
+/* 쇼츠 */
+.weekly-videos {
+  max-width: 1640px;
+  margin: 0 140px;
+}
+.weekly-videos h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.weekly-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(394px, 1fr));
+  gap: 16px;
+}
+.video-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  width: 398px;
+}
+.thumb-wrapper {
+  width: 398px;
+  height: 224px;
+  position: relative;
+}
+.thumb-wrapper img {
+  width: 398px;
+  height: 224px;
+  object-fit: cover;
+  display: block;
+}
+.tag {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 0.65rem;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #fff;
+}
+.time {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 0.65rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.video-meta {
+  padding: 15px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 60px;
+}
+.video-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--white);
+}
+.desc {
+  font-size: 0.85rem;
+  color: #B7B7B7;
+}
+
+
+/* 경기 이벤트 배너 */
+.slide-banner {
+  position: relative;
+  width: 1920px;
+  height: 458px;
+  background-image: url('../images/slide1.png');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 140px;
+  margin-top: 40px;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0));
+  z-index: 1;
+}
+.banner-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+.banner-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.banner-content p {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.btn-notify {
+  width: 350px;
+  height: 80px;
+  padding: 14px 32px;
+  font-size: 1.8rem;
+  background-color: #00AB58;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+.slide-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #fff;
+  cursor: default;
+}
+.slide-arrow.left {
+  left: 20px;
+}
+.slide-arrow.right {
+  right: 20px;
+}
+/* @media (max-width: 1920px) {
+  .slide-banner {
+    width: 100%;
+  }
+} */
+
+
+/* 리그별 다시보기 */
+.league-title-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0px;
+  margin-left: 140px;
+  width: 100%;
+  max-width: 1640px;
+}
+.league-logo {
+  background-color: #3E3E3E;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 60px;
+}
+.league-title {
+  margin-left: 10px;
+}
+.more {
+    font-size:.9rem;
+    color:var(--muted);
+    text-decoration:none;
+    margin-left: auto;
+}
+.league-logo {
+  object-fit: contain;
+}
+.nba {
+  width: 25px;
+  height: 56px;
+}
+.league-videos {
+  max-width: 1640px;
+  margin: 30px 140px 0;
+}
+.video-gap {
+  display: flex;
+  gap: 16px;
+}
+.nba-videos.weekly-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(394px, 1fr));
+  gap: 16px;
+}
+.mlb{
+  width: 72px;
+  height: 40px;
+}
+
+
+/* 이벤트 배너 */
+.event-banner {
+  width: 100%;
+  height: 180px;
+  margin-top: 40px;
+}
+
+
+/* footer */
+footer {
+  width: 1920px;
+  background: #fff;
+  border-top: 1px solid #ccc;
+  display: flex;
+  color: #363636;
+  font-size: 0.85rem;
+}
+.footer-container {
+  width: 1920px;
+  margin: 0 auto;
+  height: 200px;
+  display: flex;
+  padding: 0 140px;
+}
+.footer-left {
+  font-size: 0.5rem;
+  min-width: 300px;
+  display: flex;
+  align-items: center;;
+  gap: 30px;
+}
+.footer-left1 {
+  width: 220px;
+}
+.footer-left2 {
+  width: 250PX;
+  padding-top: 58px;
+}
+.footer-left img {
+  width: 150px;
+  height: 30px;
+  margin-bottom: 28px;
+}
+.footer-left p {
+  margin: 0.2rem 0;
+  line-height: 1.4;
+  font-size: 0.75rem;
+}
+
+
+.footer-links {
+  height: 80px;
+  display: flex;
+  gap: 50px;
+  margin-top: 85px;
+  margin-left: 50px;
+  margin-right: auto;
+}
+.footer-links a {
+  text-decoration: none;
+  font-size: 0.85rem;
+  color: #5D9EFF;
+}
+.footer-links1,
+.footer-links2,
+.footer-links3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-links3 a{
+  color: #363636;
+}
+
+
+.footer-social {
+  flex: 0 1 200px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+}
+.footer-social a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-social img {
+  width: 50px;
+  height: 50px;
+}
+/* @media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-social {
+    justify-content: flex-start;
+    margin-top: 1rem;
+  }
+} */
