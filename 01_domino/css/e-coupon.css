@@ -39,17 +39,16 @@ header .top .language {
 /* nav */
 nav {
   margin: 0 auto;
-  max-width: 1920px;
+  max-width: 1200px;
   width: 100%;
   font-size: 18px;
   border-bottom: 1px solid #ddd;
 }
 nav ul {
-  width: 1200px;
   display: flex;
   justify-content: space-between;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
 }
 nav ul li {
   flex: 1;
@@ -88,12 +87,12 @@ nav ul li a:hover::after {
 }
 .typo p {
   display: block;
-  font-size: 5vw;
+  font-size: 5rem;
   font-weight: 900;
   letter-spacing: -5px;
   position: absolute;
   color: #0078AE;
-  top: 25%;
+  top: 28%;
   left: 50%;
   transform: translate(-50%, 0);
 }
@@ -215,6 +214,8 @@ footer {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
 .ft-logo img {
   width: 123px;
@@ -231,14 +232,15 @@ footer {
   margin: 14px auto 24px;
 }
 .ft-1 ul {
-  width: 1000px;
+  max-width: 1000px;
+  width: 100%;
 }
 .ft-1 ul li {
   /* float: left; */
   display: inline-block;
 }
 .ft-1 ul li a {
-  padding: 10px;
+  padding: 10px 6px;
   font-size: 14px;
 }
 .ft-1 ul li:first-child a {
@@ -255,7 +257,6 @@ footer {
 .ft-3 p:first-child {
   margin-top: 12px;
 }
-
 .ft-item {
   width: 220px;
   position: absolute;
@@ -264,36 +265,45 @@ footer {
   bottom: 0;
 }
 .download {
-  position: absolute;
+  /* position: absolute;
   top: 37%;
-  right: 0%;
+  right: 0%; */
+  text-align: right;
+  margin-top: 104px;
+}
+.download a {
+  display: inline-block;
+  padding: 0 2px 0 0;
+  align-items: center;
+  height: 26px;
+  line-height: 26px;
+}
+.download p {
+  display: inline-block;
+  font-size: 12px;
+  padding-right: 6px;
+}
+.download a:nth-child(2) {
+  height: 26px;
+}
+.download a:nth-child(2) img {
+  width: 22px;
+  height: 26px;
+}
+.download a img {
+  width: 28px;
+  height: 23px;
+  vertical-align: middle;
+}
+.SNS ul li,
+.download ul li {
+  float: left;
 }
 .SNS {
   position: absolute;
   bottom: 0;
   right: 0;
 }
-.SNS ul li,
-.download ul li {
-  float: left;
-}
-.download ul li:nth-child(2) a,
-.download ul li:nth-child(3) a {
-  padding: 0 4px 0 0;
-}
-.download ul li:first-child {
-  font-size: 12px;
-  padding-right: 8px;
-}
-.download ul li:nth-child(2) a img {
-  width: 22px;
-  height: 26px;
-}
-.download ul li a img {
-  width: 28px;
-  height: 23px;
-}
-
 .SNS ul li a {
   padding: 0 6px;
 }
@@ -304,4 +314,76 @@ footer {
 .SNS ul li:first-child a img {
   width: 15px;
   height: 20px;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .sub-nav {
+    margin: 342px auto 0;
+  }
+  .txt {
+    padding: 0 20px 0 10px;
+  }
+  .txt br {
+    display: none;
+  }
+  .ft-item {
+    width: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+  .download {
+    position: absolute;
+    top: 70%;
+    left: 0;
+  }
+  .SNS {
+    position: absolute;
+    top: 106%;
+    left: 40%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .typo p {
+    font-size: 4rem;
+  }
+  nav {
+    font-size: 1rem;
+  }
+  .sub-nav {
+  margin: 342px auto 0;
+  }
+  .sub-nav ul {
+    gap: 20px;
+  }
+  .sub-nav li a {
+    padding: 0 10px 24px;
+    font-size: 1rem;
+  }
+  .txt {
+    padding: 0 20px 0 10px;
+  }
+  .txt br {
+    display: none;
+  }
+  .ft-item {
+    width: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+  .download {
+    position: absolute;
+    top: 74%;
+    left: 0;
+  }
+  .SNS {
+    position: absolute;
+    top: 106%;
+    left: 40%;
+  }
 }
