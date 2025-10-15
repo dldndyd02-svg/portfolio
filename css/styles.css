@@ -562,7 +562,7 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 
 .img-thumbnail {
@@ -1130,6 +1130,7 @@ progress {
   .col-md-4 {
     flex: 0 0 auto;
     width: 33.3333333333%;
+    margin-top: 30px;
   }
 
   .col-md-5 {
