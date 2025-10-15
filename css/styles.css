@@ -1379,6 +1379,7 @@ progress {
   .col-lg-11 {
     flex: 0 0 auto;
     width: 91.6666666667%; 
+    justify-content: center;
   }
 
   .col-lg-12 {
