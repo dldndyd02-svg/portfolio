@@ -1380,6 +1380,7 @@ progress {
     flex: 0 0 auto;
     width: 91.6666666667%; 
     justify-content: center;
+    margin: 0 auto;
   }
 
   .col-lg-12 {
@@ -11086,6 +11087,13 @@ html {
 
 /* /////////////////////////////////////////////////////////////// */
 
+.mg-0 {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: center;
+}
+
 /* reset */
 ul {
   list-style: none;
@@ -11347,6 +11355,8 @@ header h1 {
   padding: 6px 20px;
   font-size: 1.3rem;
 }
+
+
 
 
 
