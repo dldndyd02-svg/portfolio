@@ -7397,7 +7397,7 @@ textarea.form-control-lg {
 .bg-primary {
   /* background-color: #1abc9c !important; */
   /* background-color: var(--bs-dark); */
-  background: url(../assets/img/portfolio/bbbbbbg.jpg) no-repeat center/cover;
+  background: url(../assets/img/portfolio/main_bg.jpg) no-repeat center/cover;
 }
 
 /* .bg-secondary {
@@ -11235,8 +11235,10 @@ header h1 {
   margin-right: 14px;
   opacity: 0;
 }
-.number {
-  font-size: 0.8rem;
+.adress,
+.number,
+.kakao {
+  font-size: 1rem;
 }
 .mail img,
 .tel img,
