@@ -11114,7 +11114,7 @@ header .txt .info {
   display: flex;
   flex-direction: column;
   width: 600px;
-  top: 38%;
+  top: 36%;
   left: 70%;
   text-align: start;
   transform: translateX(-60%);
@@ -11156,7 +11156,7 @@ header h1 {
   height: 400px;
   position: absolute;
   background-color: #777778;
-  top: 30%;
+  top: 28%;
   left: 27%;  
 }
 .sub-txt {
