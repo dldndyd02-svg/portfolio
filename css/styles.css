@@ -11109,17 +11109,42 @@ header {
   color: #fff;
   position: relative;
 }
-/* header img {
+header .txt .info {
   position: absolute;
-  width: 100%;
-  max-height: 760px;
-  height: 100%;
-  top: 52%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  top: 38%;
+  left: 70%;
+  text-align: start;
+  transform: translateX(-60%);
+}
+header .txt .info > * {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideUp 0.8s ease-out forwards;
+}
+header .txt h1 {
+  animation-delay: 0.2s;
+}
+header .txt .sub-txt {
+  animation-delay: 0.5s;
+}
+header .txt .myname {
+  animation-delay: 0.8s;
+}
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 header h1 {
-  position: absolute;
+  /* position: absolute; */
   font-size: 3rem;
   font-weight: 500;
   color: #777;
@@ -11135,7 +11160,7 @@ header h1 {
   left: 27%;  
 }
 .sub-txt {
-  position: absolute;
+  /* position: absolute; */
   font-size: 2rem;
   font-weight: 900;
   color: #fff;
@@ -11144,7 +11169,7 @@ header h1 {
 }
 .myname {
   color: #fff;
-  position: absolute;
+  /* position: absolute; */
   font-size: 4rem;
   font-weight: 900;
   top: 54%;
