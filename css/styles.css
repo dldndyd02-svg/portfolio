@@ -11282,7 +11282,7 @@ header h1 {
 .ab-grid {
   display: flex;
   justify-content: baseline;
-  align-items: end;
+  /* align-items: end; */
 }
 .career {
   max-width: 700px;
@@ -11293,6 +11293,7 @@ header h1 {
 .picture {
   width: 400px;
   height: 400px;
+  margin-top: 60px;
 }
 .picture img {
   width: 100%;
