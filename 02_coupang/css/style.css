@@ -61,10 +61,17 @@ nav {
   position: relative;
 }
 .main .map {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  padding-left: 333px;
+  /* padding-left: 333px; */
   padding-top: 34px;
+  margin: 0 auto;
   position: relative;
+}
+.marker {
+  display: flex;
+  justify-content: center;
 }
 .main .sports-event {
   position: absolute;
@@ -84,7 +91,8 @@ nav {
 }
 .marker a .KBO-MK {
   position: absolute;
-  left: 74.5%;
+  /* left: 74.5%; */
+  left: 73.5vw;
   top: 36%;
 }
 .marker a .LMB-MK {

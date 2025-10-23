@@ -565,10 +565,29 @@ progress {
   content: "— ";
 }
 
+.portfolio-item:hover .img-fluid {
+  opacity: 0.25;
+}
+.portfolio-item:hover .over-txt {
+  opacity: 1;
+}
 .img-fluid {
+  position: relative;
   max-width: 100%;
   height: auto;
-  /* margin-top: 30px; */
+  transition: opacity 0.4s ease;
+  margin-top: 0px;
+}
+.over-txt {
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  color: #fff;
+  opacity: 1;
+  bottom: 5%;
+  left: 10%;
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
 .img-thumbnail {
@@ -10980,6 +10999,17 @@ header h1 {
 
 
 
+.more {
+  margin: 30px auto;
+}
+.more a {
+  padding: 10px 40px;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  background-color: var(--bs-dark);
+}
+
+
 /* icon box */
 .icon-box {
   position: fixed;
@@ -11047,6 +11077,7 @@ header h1 {
   margin: 0 auto;
 }
 .career {
+  font-size: 2.5rem;
   margin-top: 60px;
 }
 .ab-grid .info-area {
@@ -11065,7 +11096,6 @@ header h1 {
 .education {
   margin-top: 60px;
 }
-.career,
 .education h3,
 .skills h3 {
   font-size: 2.5rem;
@@ -11096,6 +11126,7 @@ header h1 {
 .info-area .car-txt {
   margin-top: 30px;
   list-style: circle;
+  padding-left: 0;
 }
 .info-area .car-txt li {
   margin-bottom: 10px;
@@ -11264,6 +11295,9 @@ header h1 {
 
 
 @media screen and (max-width: 768px) {
+  .img-fluid {
+    margin-top: 30px;
+  }
   .goto {
     gap: 20px;
   }
@@ -11346,4 +11380,11 @@ header h1 {
     height: 50px;
     border-radius: 10px;
   }
+}
+
+
+#portfolioModal6-1,
+#portfolioModal7-1,
+#portfolioModal8-1 {
+  z-index: 9999;
 }
