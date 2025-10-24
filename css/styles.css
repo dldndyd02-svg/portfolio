@@ -11001,6 +11001,9 @@ header h1 {
 
 .more {
   margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 .more a {
   padding: 10px 40px;

@@ -43,6 +43,38 @@ nav {
   width: 100%;
   font-size: 18px;
 }
+nav > ul {
+  display: flex;
+}
+nav .depth1 > a {
+    display: block;
+    position: relative;
+}
+nav .depth2 {
+    background-color: #286bbc;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px;
+}
+nav .depth2 a {
+    color: rgba(255,255,255,0.5);
+    line-height: 32px;
+    display: block;
+}
+nav .depth2 a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+nav .depth2 {
+    display: none;
+}
+
+
+
+
+
+
 nav ul {
   display: flex;
   justify-content: space-between;
@@ -52,6 +84,10 @@ nav ul {
 nav ul li {
   flex: 1;
   text-align: center;
+}
+.depth1.on > a::before {
+    margin-left: -50%;
+    width: 100%;
 }
 nav ul li a {
   display: block;
