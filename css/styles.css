@@ -11076,21 +11076,26 @@ header h1 {
   grid-template-columns: 1fr 0.65fr; */
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
   margin: 0 auto;
 }
 .career {
   font-size: 2.5rem;
   margin-top: 60px;
+  margin-bottom: 20px;
 }
 .ab-grid .info-area {
   justify-self: start;
   margin-left: 0;
 }
+.car-area {
+  display: flex;
+  flex-direction: column;
+}
 .picture {
-  width: 400px;
+  width: 295.5px;
   height: 400px;
-  margin-right: 100px;
+  margin-right: 180px;
 }
 .picture img {
   width: 100%;
@@ -11212,7 +11217,7 @@ header h1 {
 
 @media screen and (max-width: 1400px) {
   .picture {
-    width: 300px;
+    width: 195.5px;
     height: 300px;
   }
 }
@@ -11227,7 +11232,7 @@ header h1 {
     display: none;
   }
   .picture {
-    width: 300px;
+    width: 195.5px;
     height: 300px;
     margin-right: 60px;
   }

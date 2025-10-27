@@ -47,29 +47,29 @@ nav > ul {
   display: flex;
 }
 nav .depth1 > a {
-    display: block;
-    position: relative;
+  display: block;
+  position: relative;
 }
 nav .depth2 {
-    background-color: #286bbc;
-    left: 0;
-    top: 60px;
-    width: 100%;
-    padding: 20px;
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  top: 54px;
+  width: 100%;
+  padding: 20px;
+  z-index: 1000;
+  font-size: 1rem;
+  display: none;
 }
 nav .depth2 a {
-    color: rgba(255,255,255,0.5);
-    line-height: 32px;
-    display: block;
+  color: inherit;
+  line-height: 32px;
+  display: block;
 }
 nav .depth2 a:hover {
-    color: #fff;
-    text-decoration: underline;
+  color: #0675B2;
+  text-decoration: underline;
 }
-nav .depth2 {
-    display: none;
-}
-
 
 nav ul {
   display: flex;
@@ -80,15 +80,17 @@ nav ul {
 nav ul li {
   flex: 1;
   text-align: center;
+  position: relative;
 }
 .depth1.on > a::before {
     margin-left: -50%;
     width: 100%;
 }
 nav ul li a {
-  display: block;
+  display: inline-block;
   line-height: 54px;
   position: relative;
+  padding-bottom: 5px;
 }
 nav ul li a::after {
   content: '';
@@ -99,7 +101,7 @@ nav ul li a::after {
   height: 2px;
   background-color: #121212;
   transition: all 0.3s ease;
-  transform: translateX(-50%);
+  transform: translateX(-50%);  
 }
 nav ul li a:hover::after {
   width: 50%;
