@@ -68,7 +68,7 @@ nav .depth2 a {
 }
 nav .depth2 a:hover {
   color: #0675B2;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 nav ul {

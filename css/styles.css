@@ -11053,15 +11053,14 @@ header h1 {
   width: 60px;
   height: 60px;
 }
+.kakao img {
+  background-color: #F9E000;
+}
+.kakao img:hover {
+  background-color: #D0BB00;
+}
 .mail img:hover,
-.tel img:hover
-.kakao img:hover {
-  background: #dadada;
-}
 .tel img:hover {
-  background: #dadada;
-}
-.kakao img:hover {
   background: #dadada;
 }
 .mail:hover .adress,
